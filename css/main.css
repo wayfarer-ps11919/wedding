@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
-
+body,
+html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
 img {
 	max-width: 100%;
 }
@@ -18,6 +23,7 @@ ul {
 .main-wrap {
 	max-width: 640px;
 	margin: 0 auto;
+	width: 100%;
 }
 .s1 .img-wrap {
 	position: relative;
@@ -251,4 +257,26 @@ ul {
 }
 .s3 .female .call-btn a.tel {
 	background-color: #fbc9e2;
+}
+.s3 .call-btn .credit {
+	color: #666;
+}
+
+#Modal .d-flex span {
+}
+.slider-section .swiper-wrapper {
+	height: 480px;
+}
+.slider-section .thumbsSlider {
+	padding: 10px 0;
+	background: #000;
+}
+.slider-section .thumbsSlider .swiper-wrapper {
+	height: 100px;
+}
+.slider-section .swiper-wrapper .img-wrap {
+	display: flex;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.8);
+	height: inherit;
 }
