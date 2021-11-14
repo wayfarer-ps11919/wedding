@@ -2,9 +2,8 @@ $(function() {
 	$(document).ready(function() {
 		$(".copy").on("click", function() {
 			if (navigator.userAgent.match(/ipad|ipod|iphone/i)) {
-				$(".btn").text("복사글 선택");
 				$(".btn").on("click", function(e) {
-					select_all_and_copy(document.getElementById("copytextarea"));
+					select_all_and_copy(document.getElementById("foo"));
 				});
 			} else {
 				var clipboard = new Clipboard(".btn");
