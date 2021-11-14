@@ -376,6 +376,9 @@ ul {
 	text-align: center;
 	padding: 20px;
 }
+.notice4 h4 {
+	line-height: 35px;
+}
 .notice4 h2 {
 	background-color: #f4f4f4;
 	padding: 20px 0;
@@ -384,7 +387,7 @@ ul {
 .notice4 a {
 	text-decoration: none;
 	display: block;
-	margin: 30px auto;
+	margin: 20px auto 50px;
 	border-radius: 15px;
 	padding: 10px 25px;
 	width: 130px;

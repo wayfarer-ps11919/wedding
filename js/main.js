@@ -1,30 +1,15 @@
-function copyToClipBoard(msg) {
-	const el = document.createElement("input");
-	msg = msg.replaceAll("-", "");
-	el.value = msg;
-	document.body.appendChild(el);
-	el.select();
-	navigator.clipboard.writeText(el.value);
-	document.body.removeChild(el);
-
-	var tmpTextarea = document.createElement("textarea");
-	tmpTextarea.value = msg;
-
-	document.body.appendChild(tmpTextarea);
-	tmpTextarea.select();
-	tmpTextarea.setSelectionRange(0, 9999); // 셀렉트 범위 설정
-
-	document.execCommand("copy");
-	document.body.removeChild(tmpTextarea);
-	//alert("URL 복사가 완료되었습니다.");
-	alert("복사되었습니다.");
-}
-
 $(function() {
 	$(document).ready(function() {
+		// 모든 이미지 tag들을 list형태로 가져옴
+
 		$(".copy").on("click", function() {
 			let copymsg = $(".modal-account").text();
-			copyToClipBoard(copymsg);
+			$(this).attr("data-clipboard-text", copymsg);
+
+			var clip = new Clipboard(".copy");
+			clip.on("success", function(e) {
+				alert("복사되었습니다.");
+			});
 		});
 		$(".credit").on("click", function() {
 			let title = $(this).data("title");
