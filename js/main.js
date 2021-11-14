@@ -7,6 +7,16 @@ function copyToClipBoard(msg) {
 	navigator.clipboard.writeText(el.value);
 	document.body.removeChild(el);
 
+	var tmpTextarea = document.createElement("textarea");
+	tmpTextarea.value = msg;
+
+	document.body.appendChild(tmpTextarea);
+	tmpTextarea.select();
+	tmpTextarea.setSelectionRange(0, 9999); // 셀렉트 범위 설정
+
+	document.execCommand("copy");
+	document.body.removeChild(tmpTextarea);
+	//alert("URL 복사가 완료되었습니다.");
 	alert("복사되었습니다.");
 }
 
@@ -20,7 +30,7 @@ $(function() {
 			let title = $(this).data("title");
 			let account = $(this).data("account");
 			let bank = $(this).data("bank");
-			let name = $(this).data("name");
+			let name = "예금주 : " + $(this).data("name");
 			$(".modal-title").text(title);
 			$(".modal-bank").text(bank);
 			$(".modal-account").text(account);

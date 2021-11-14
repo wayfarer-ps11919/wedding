@@ -57,7 +57,7 @@ ul {
 }
 
 .inline-flex-box span {
-	padding: 5px 10px;
+	padding: 5px;
 	border-bottom: none;
 }
 
@@ -343,11 +343,12 @@ ul {
 	align-items: center;
 }
 #Modal .copy {
-	border: 1px solid #666;
-	background-color: #666;
-	border-radius: 10px;
+	border: 1px solid #5b1eaa;
+	background-color: #5b1eaa;
 	padding: 5px 15px;
 	color: #fff;
+
+	width: 40%;
 }
 #Modal .close-btn {
 	background: unset;
@@ -356,10 +357,38 @@ ul {
 	background-color: transparent;
 	border: 1px solid transparent;
 }
-
+#Modal .d2 {
+	margin: 10px 0;
+}
+#Modal .d2 .modal-account {
+	background: #f6f6f6;
+	padding: 5px;
+	width: 70%;
+	color: #666;
+	border: 1px solid #f6f6f6;
+	font-weight: bold;
+}
 .notice4 {
 	margin-top: 80px;
 }
-.notice4 h3 {
+.notice4 h4,
+.notice4 h2 {
+	text-align: center;
+	padding: 20px;
+}
+.notice4 h2 {
+	background-color: #f4f4f4;
+	padding: 20px 0;
+	margin-bottom: 30px;
+}
+.notice4 a {
+	text-decoration: none;
+	display: block;
+	margin: 30px auto;
+	border-radius: 15px;
+	padding: 10px 25px;
+	width: 130px;
+	background-color: #5b413b;
+	color: #fff;
 	text-align: center;
 }
