@@ -8,7 +8,7 @@ $(function() {
 
 			var clip = new Clipboard(".copy");
 			clip.on("success", function(e) {
-				alert("복사되었습니다.");
+				alert("계좌번호를 복사하였습니다.");
 			});
 		});
 		$(".credit").on("click", function() {
