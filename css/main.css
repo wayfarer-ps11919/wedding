@@ -40,7 +40,7 @@ ul {
 	margin: 15px 0;
 	justify-content: center;
 	align-items: center;
-	font-size: 19px;
+	font-size: calc(1.5rem + 1.2vw);
 	font-weight: bolder;
 	font-family: 'Gamja Flower';
 	flex-wrap: wrap;
@@ -73,8 +73,8 @@ ul {
 }
 
 .intro .img-wrap {
-	width: 100px;
-	height: 100px;
+	width: 75px;
+	height: 75px;
 	margin: 30px auto 0;
 	overflow: hidden;
 	position: relative;
@@ -94,7 +94,7 @@ ul {
 	text-align: center;
 }
 .intro img {
-	transform: translateY(-23%);
+	transform: translateY(-15%) scale(1.2);
 }
 
 .s1 .notice-day {
@@ -130,10 +130,13 @@ ul {
 }
 
 .s4-after {
+	border-radius: 20px;
+	overflow: hidden;
+	margin: 30px 15px;
 }
 .s4-after .d-flex > div {
 	width: 25%;
-	height: 80px;
+	height: 75px;
 	overflow: hidden;
 }
 .s4-after .d-flex .bg-img {
@@ -146,7 +149,7 @@ ul {
 	transform: translateY(10%) scale(1.2);
 }
 .s4-after .bg2 {
-	transform: translateY(-35%) rotateZ(-90deg) scale(1.3);
+	transform: translate(0%, 0%) scale(1.1);
 }
 .s4-after .bg3 {
 	transform: translateX(10%) scale(1.2);
@@ -157,11 +160,17 @@ ul {
 .s4 ul {
 	display: flex;
 }
+.s4 .welcome {
+	margin-top: 30px;
+	line-height: 35px;
+	font-size: calc(1.3rem + 0.5vw);
+}
 .welcome {
 	text-align: center;
 	color: #e66b6b;
-	font-size: 22px;
+	font-size: calc(1.8rem + 0.5vw);
 	margin-bottom: 30px;
+	font-family: 'Gamja Flower';
 }
 .s4 > div {
 	background-color: #f4f4f4;
@@ -178,11 +187,12 @@ ul {
 	padding: 1.5em 1em 1em;
 	background-color: #fff;
 	border-bottom: 1px solid #f4f4f4;
+	font-family: 'Gamja Flower';
 }
 
 .s4 .day,
 .s4 .month {
-	font-size: 1.2em;
+	font-size: 1.8em;
 	font-weight: 900;
 	line-height: 1em;
 	display: inline-block;
@@ -203,6 +213,7 @@ ul {
 }
 
 .s4 .calendar li {
+	font-family: 'Gamja Flower';
 	padding: .5em;
 	text-align: center;
 	width: 14.3%;
@@ -348,4 +359,7 @@ ul {
 
 .notice4 {
 	margin-top: 80px;
+}
+.notice4 h3 {
+	text-align: center;
 }

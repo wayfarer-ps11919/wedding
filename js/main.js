@@ -6,6 +6,8 @@ function copyToClipBoard(msg) {
 	el.select();
 	navigator.clipboard.writeText(el.value);
 	document.body.removeChild(el);
+
+	alert("복사되었습니다.");
 }
 
 $(function() {
