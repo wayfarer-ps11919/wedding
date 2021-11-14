@@ -1,19 +1,21 @@
 $(function() {
 	$(document).ready(function() {
 		$(".copy").on("click", function() {
-			let copymsg = $(".modal-account").text();
-			const CopyByClipBoardAPI = () => {
-				const copyByClipBoardAPI = () => {
-					navigator.clipboard
-						.writeText(`${copymsg}`)
-						.then(() => {
-							alert(`${copymsg}을 클립보드에 복사했습니다.`);
-						})
-						.catch(() => {
-							alert(`복사 실패!`);
-						});
-				};
-			};
+			if (navigator.userAgent.match(/ipad|ipod|iphone/i)) {
+				$(".btn").text("복사글 선택");
+				$(".btn").on("click", function(e) {
+					select_all_and_copy(document.getElementById("copytextarea"));
+				});
+			} else {
+				var clipboard = new Clipboard(".btn");
+				clipboard.on("success", function(e) {
+					alert("복사 되었습니다.");
+					e.clearSelection();
+				});
+				clipboard.on("error", function(e) {
+					alert("선택된 텍스트를 복사하세요.");
+				});
+			}
 		});
 		$(".credit").on("click", function() {
 			let title = $(this).data("title");
@@ -22,7 +24,7 @@ $(function() {
 			let name = "예금주 : " + $(this).data("name");
 			$(".modal-title").text(title);
 			$(".modal-bank").text(bank);
-			$(".modal-account").text(account);
+			$(".modal-account").attr("value", account);
 			$(".modal-accName").text(name);
 		});
 
