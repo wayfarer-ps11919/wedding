@@ -38,14 +38,14 @@ body ul {
 	margin: 0;
 }
 #daumRoughmapContainer1637411128778 {
-	max-width: 640px;
+	max-width: 540px;
 	height: 320px;
 	background: #d7d7d7;
 	width: 100%;
 }
 
 .main-wrap {
-	max-width: 640px;
+	max-width: 540px;
 	margin: 0 auto;
 	width: 100%;
 }
@@ -438,7 +438,7 @@ body ul {
 	margin: 0px auto 50px;
 	border-radius: 15px;
 	padding: 5px 15px;
-	width: 110px;
+	width: calc(7.5rem + 2.25vw);
 	background-color: #e66b6b;
 	color: #fff;
 	text-align: center;
@@ -447,7 +447,16 @@ body ul {
 
 @media (min-width: 452px) {
 	.s4-after .d-flex > div {
-		height: 16.5vw;
+		height: 5.5em;
 		max-height: 150px;
 	}
+	.s1 .inline-flex-box {
+		margin: 10px 0;
+	}
+	.s1 .notice-day {
+		line-height: 40px;
+	}
+}
+.main-wrap {
+	border: 1px solid #d5d5d5;
 }
