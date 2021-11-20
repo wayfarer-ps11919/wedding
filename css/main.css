@@ -29,15 +29,15 @@ html {
 	padding: 0;
 	width: 100%;
 }
-img {
+body img {
 	max-width: 100%;
 }
-ul {
+body ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
-#daumRoughmapContainer1636115201608 {
+#daumRoughmapContainer1637411128778 {
 	max-width: 640px;
 	height: 320px;
 	background: #d7d7d7;
@@ -147,7 +147,7 @@ ul {
 	font-size: calc(1rem + .05vw);
 }
 .s3 {
-	margin: 50px 0;
+	margin: 50px 0 60px;
 }
 .s4-after {
 	overflow: hidden;
@@ -183,12 +183,14 @@ ul {
 	margin-top: 30px;
 	line-height: 35px;
 	font-size: calc(1.1rem + 0.5vw);
+	letter-spacing: 3px;
 }
 .welcome {
 	text-align: center;
 	color: #e66b6b;
-	font-size: calc(1.5rem + 0.5vw);
+	font-size: calc(1.1rem + 0.5vw);
 	font-family: 'Cafe24Danjunghae';
+	letter-spacing: 10px;
 }
 .s4 > div {
 	background-color: #f4f4f4;
@@ -208,15 +210,16 @@ ul {
 
 .s4 .day,
 .s4 .month {
-	font-size: 1.4em;
+	font-size: 1.2em;
 	font-weight: 900;
 	line-height: 1em;
 	display: inline-block;
+	letter-spacing: 5px;
 }
 .s4 .time {
 	display: inline-block;
 	float: right;
-	font-size: 1.2em;
+	font-size: 1.0em;
 }
 
 .s4 .calendar {
@@ -270,12 +273,16 @@ ul {
 .s5 .location h5 {
 	margin-top: 10px;
 	margin-bottom: 10px;
+	font-size: calc(0.95rem + .9vw);
+	font-family: 'NanumBarunGothic';
+	text-align: center;
 }
 .s5 .location h5 {
 	color: #9c9c9c;
+	font-size: calc(0.65rem + .9vw);
 }
 .s5 .location {
-	padding: 20px;
+	padding: 3px;
 	background-color: #f4f4f4;
 }
 .s5 .location-link {
@@ -347,7 +354,12 @@ ul {
 #Modal .d-flex span {
 }
 .slider-section {
-	margin: 50px 0 0;
+	margin: 60px 0 0;
+}
+.slider-section .welcome {
+	margin-bottom: 10px;
+	font-size: calc(1.1rem + 0.5vw);
+	letter-spacing: 10px;
 }
 .slider-section .swiper-wrapper {
 	height: 480px;
@@ -410,10 +422,10 @@ ul {
 	padding: 0 20px 10px;
 }
 .notice4 h4 {
-	line-height: 30px;
+	line-height: 25px;
 	margin: 0;
-	font-family: 'Cafe24Danjunghae';
-	font-size: calc(1.175rem + .1vw);
+	font-family: 'NanumBarunGothic';
+	font-size: calc(1rem + .1vw);
 }
 .notice4 h2 {
 	background-color: #f4f4f4;
