@@ -117,19 +117,19 @@
     <div class="">
       <div class="calendar-container">
         <header>
-          <div class="month">12.</div>
-          <div class="day">18</div>
-          <div class="time">(토) 오후 12:00</div>
+          <div class="month">12월</div>
+          <div class="day">18일</div>
+          <div class="time">(토) 오후 12:30</div>
         </header>
         <div class="calendar">
             <ul class="day-title">
-              <li>Sun</li>
-              <li>Mon</li>
-              <li>Tue</li>
-              <li>Wed</li>
-              <li>Thu</li>
-              <li>Fri</li>
-              <li>Sat</li>
+              <li class="sun-day">S</li>
+              <li>M</li>
+              <li>T</li>
+              <li>W</li>
+              <li>T</li>
+              <li>F</li>
+              <li>S</li>
     
             </ul>
             <ul>
@@ -158,7 +158,7 @@
               <li>15</li>
               <li>16</li>
               <li>17</li>
-              <li class="current-day">18</li>
+              <li class="current-day"></li>
             </ul>
             <ul>
               <li class="sun-day">19</li>
@@ -183,38 +183,69 @@
     
     </div> <!-- end container -->
   </section>
-  <section class="s5">
-    <h3 class="welcome">오시는 길</h3>
-    <div class="location">
-      <h4>더에스비웨딩컨벤션</h4>
-      <h5>서울 동작구 보라매로5길 15<br>전문건설회관 3층</h5>
-    </div>
-     <div class="map-wrap">
-       <!-- * 카카오맵 - 지도퍼가기 -->
-        <!-- 1. 지도 노드 -->
-        <div id="daumRoughmapContainer1636115201608" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+  <section class="slider-section">
+    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"  class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+          
+          <div class="swiper-slide">
+            <div class="img-wrap">
+              <img src="images/slider/sl_2.jpg" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img-wrap">
+              <img src="images/slider/sl_1.jpg" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img-wrap">
+              <img src="images/slider/sl_4.jpg" />
+            </div>
+          </div><div class="swiper-slide">
+            <div class="img-wrap">
+              <img src="images/slider/sl_7.jpg" />
+            </div>
+          </div><div class="swiper-slide">
+            <div class="img-wrap">
+              <img src="images/slider/sl_8.jpg" />
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div thumbsSlider="" class="thumbsSlider swiper mySwiper">
+        <div class="swiper-wrapper">
+          
+          <div class="swiper-slide">
+            <div class="img-wrap">
+              <img src="images/slider/sl_2.jpg" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img-wrap">
+              <img src="images/slider/sl_1.jpg" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img-wrap">
+              <img src="images/slider/sl_4.jpg" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img-wrap">
+              <img src="images/slider/sl_7.jpg" />
+            </div>
+          </div><div class="swiper-slide">
+            <div class="img-wrap">
+              <img src="images/slider/sl_8.jpg" />
+            </div>
+          </div>
+          
+        </div>
+      </div>
+  
+  </section>
 
-        <!--
-          2. 설치 스크립트
-          * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
-        -->
-        <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-
-        <!-- 3. 실행 스크립트 -->
-        <script charset="UTF-8">
-          new daum.roughmap.Lander({
-            "timestamp" : "1637411128778",
-		        "key" : "285ir",
-            "mapHeight" : "360"
-          }).render();
-        </script>
-     </div>
-     <div class="location-link">
-       <a href="https://surl.tmap.co.kr/870e3933" class="tmap"></a>
-       <a href="http://kko.to/hVpRiMWfp" class="daummap"></a>
-       <a href="http://naver.me/GqBsKyQO" class="navermap"></a>
-     </div>
-	 </section>
 <section class="s3">
     <div class="notice3">
        <div class="male common-row">
@@ -238,103 +269,43 @@
          </div>
        </div>
    </div>
-   <!--
-   <div class="guide-line">
-     혼주에게 연락하기
-   </div>
-   <div class="notice4">
-     <div class="col">
-       <h4 class="title">신랑 측 혼주</h4>
-       <h5 class="sub-title"><span>아버지</span>황용택</h5>
-         <div class="call-btn">
-           <a>연락하기</a>
-           <a>송금하기</a>
-         </div>
-         <h5 class="sub-title"><span>어머니</span>조화숙</h5>
-         <div class="call-btn">
-           <a>연락하기</a>
-           <a>송금하기</a>
-         </div>
-     </div>
-     <div class="col">
-       <h4 class="title">신부 측 혼주</h4>
-       <h5 class="sub-title"><span>아버지</span>김상균</h5>
-         <div class="call-btn">
-           <a>연락하기</a>
-           <a>송금하기</a>
-         </div>
-         <h5 class="sub-title"><span>어머니</span>박미숙</h5>
-         <div class="call-btn">
-           <a>연락하기</a>
-           <a>송금하기</a>
-         </div>
-     </div>
-   </div>
-   -->
+   
  </section>
  <!-- Button trigger modal -->
-<section class="slider-section">
-  <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"  class="swiper mySwiper2">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="img-wrap">
-            <img src="images/slider/sl_1.jpg" />
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="img-wrap">
-            <img src="images/slider/sl_2.jpg" />
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="img-wrap">
-            <img src="images/slider/sl_4.jpg" />
-          </div>
-        </div><div class="swiper-slide">
-          <div class="img-wrap">
-            <img src="images/slider/sl_7.jpg" />
-          </div>
-        </div><div class="swiper-slide">
-          <div class="img-wrap">
-            <img src="images/slider/sl_8.jpg" />
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    <div thumbsSlider="" class="thumbsSlider swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="img-wrap">
-            <img src="images/slider/sl_1.jpg" />
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="img-wrap">
-            <img src="images/slider/sl_2.jpg" />
-          </div>
-        </div>
-        
-        <div class="swiper-slide">
-          <div class="img-wrap">
-            <img src="images/slider/sl_4.jpg" />
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="img-wrap">
-            <img src="images/slider/sl_7.jpg" />
-          </div>
-        </div><div class="swiper-slide">
-          <div class="img-wrap">
-            <img src="images/slider/sl_8.jpg" />
-          </div>
-        </div>
-        
-      </div>
-    </div>
 
-</section>
 
+ <section class="s5">
+  <h3 class="welcome">오시는 길</h3>
+  <div class="location">
+    <h4>더에스비웨딩컨벤션</h4>
+    <h5>서울 동작구 보라매로5길 15<br>전문건설회관 3층</h5>
+  </div>
+   <div class="map-wrap">
+     <!-- * 카카오맵 - 지도퍼가기 -->
+      <!-- 1. 지도 노드 -->
+      <div id="daumRoughmapContainer1637411128778" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+      <!--
+        2. 설치 스크립트
+        * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+      -->
+      <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+      <!-- 3. 실행 스크립트 -->
+      <script charset="UTF-8">
+        new daum.roughmap.Lander({
+          "timestamp" : "1637411128778",
+          "key" : "285ir",
+          "mapHeight" : "360"
+        }).render();
+      </script>
+   </div>
+   <div class="location-link">
+     <a href="https://surl.tmap.co.kr/870e3933" class="tmap"></a>
+     <a href="http://kko.to/hVpRiMWfp" class="daummap"></a>
+     <a href="http://naver.me/GqBsKyQO" class="navermap"></a>
+   </div>
+ </section>
 
 
     <div class="notice4">
