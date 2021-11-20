@@ -69,7 +69,7 @@ ul {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: calc(1.1rem + 1.2vw);
+	font-size: calc(1.1rem + 1.1vw);
 	font-weight: bolder;
 	font-family: 'MapoFlowerIsland';
 	flex-wrap: wrap;
