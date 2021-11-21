@@ -387,11 +387,11 @@ body ul {
 }
 .s5 .location-info h4 {
 	padding-left: 20px;
-	font-weight: 'NanumBarunGothic';
+	font-family: 'NanumBarunGothic';
+	font-size: calc(0.65em + 1.1vw);
 }
 .s5 .location-info .empty {
 	display: inline-block;
-	width: 70px;
 }
 .s5 .location-info {
 	margin-bottom: 40px;
@@ -410,7 +410,6 @@ body ul {
 	background-color: #5b1eaa;
 	padding: 5px 15px;
 	color: #fff;
-
 	width: 40%;
 }
 #Modal .close-btn {
