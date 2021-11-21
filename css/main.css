@@ -377,13 +377,14 @@ body ul {
 }
 
 .s5 .location-info {
-	padding: 0 20px;
+	padding: 0 30px;
 }
 .s5 .location-info h3 {
 	color: #e66b6b;
 	margin-top: 40px;
 	font-family: 'Cafe24Oneprettynight';
 	font-weight: bold;
+	font-size: calc(0.85em + 1.1vw);
 }
 .s5 .location-info h4 {
 	padding-left: 20px;
